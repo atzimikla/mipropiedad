@@ -1,6 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
 Administracion de propiedades
 
 Se divide en dos modulos el administrativo y el del usuario.
