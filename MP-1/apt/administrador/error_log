@@ -1,0 +1,2 @@
+[23-Aug-2019 15:33:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home2/andresfm/public_html/webafm/apt/administrador/historial.php on line 50
+[23-Aug-2019 15:35:30 America/Chicago] PHP Fatal error:  Call to undefined function mysql_fect_array() in /home2/andresfm/public_html/webafm/apt/administrador/historial.php on line 48

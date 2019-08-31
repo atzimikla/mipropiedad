@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1"/>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		
+        <title>Configuración</title>	
+		<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+		<link href="css/menu.css" rel="stylesheet" type="text/css"/>
+		<script src="js/modernizr.custom.js"></script>
+    </head>
+	
+	<body>
+		<div class="wrapper">
+		
+			<header>
+				<div class="logo">
+					<a href="index.html"></a>
+				</div> <!-- FIN LOGO -->
+				
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="index.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-inicio"></i>
+								</span>
+								<span>Inicio</span>
+							</a>
+						</li>
+						<li>
+							<a href="configuracion.html">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-confi"></i>
+								</span>
+								<span>Configuración</span>
+							</a>
+						</li>
+						<li>
+							<a href="propietarios.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-prop"></i>
+								</span>
+								<span>Propietarios</span>
+							</a>
+						</li>
+						<li>
+							<a href="historial.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-hist"></i>
+								</span>
+								<span>Historial</span>
+							</a>
+						</li>
+						<li>
+							<a href="facturacion.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-fact"></i>
+								</span>
+								<span>Facturación</span>
+							</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-salir"></i>
+								</span>
+								<span>Salir</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section>
+				
+				<h1>Configuración</h1>
+				
+				<div class="nav_obtion">
+					<input type="button" class="guardar" value="Guardar">
+					<a href="index.html" class="cancelar">Cancelar</a>
+				</div> <!-- FINE NAV_OBTION -->
+				
+				<article class="article">
+					<form>
+						<label>Nombre:</label>
+						<input type="text">
+						
+						<label>Nit:</label>
+						<input type="text">
+						
+						<label>Administrador:</label>
+						<input type="text">
+						
+						<label>Dirección:</label>
+						<input type="text">
+						
+						<label>Teléfono:</label>
+						<input type="text">
+						
+						<label>N° apartamento:</label>
+						<input type="text">
+						
+						<label>Valor arriendo:</label>
+						<input type="text">
+						
+						<label>Tasa:</label>
+						<input type="text">
+						
+						<label>Logo:</label>
+						<input type="text">
+					</form>
+				</article>
+				
+			</section>
+			
+		</div> <!-- FIN WRAPPER -->
+		
+		
+		<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+
+			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
+	</body>
+</html>

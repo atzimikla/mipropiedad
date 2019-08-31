@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1"/>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		
+        <title>Títlo de la página</title>	
+		<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+<!--		<script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>-->
+    </head>
+	
+	<body>
+		<div class="wrapper">
+		
+			<header>
+				<div class="logo">
+					<a href="index.html"> </a>
+				</div> <!-- FIN LOGO -->
+			</header>
+
+			<section>
+				
+				<div class="login">
+					<h1>Iniciar sesión</h1>
+					 <form action="funciones/f-login.php" method="POST" enctype="multipart/form-data" name="menu" >
+						<fieldset id="inputs">
+							<input name="usuario" id="username" type="text" placeholder="Username" autofocus required>   
+							<input name="contrasena" id="password" type="password" placeholder="Password" required>
+						</fieldset>
+						<fieldset id="actions">
+							<input type="submit" id="ingresar" value="Ingresar">
+						</fieldset>
+					</form>
+
+				</div> <!-- FIN LOGIN -->
+				
+			</section>
+			
+		</div> <!-- FIN WRAPPER -->
+	</body>
+</html>

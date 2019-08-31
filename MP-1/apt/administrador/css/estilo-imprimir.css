@@ -1,0 +1,111 @@
+body { 
+   font: 8pt Verdana, Geneva, Arial, Helvetica, sans-serif; 
+   margin:0; 
+   text-align: center; 
+   background: #FFF; 
+} 
+
+.wrapper-imp{
+	width:720px;
+	margin:auto;
+	background: #FFF; 
+	border:1px solid #194c80;
+	margin:0 0 20px 0;
+}
+
+.header-imp{
+	width:100%;
+	height:75px;
+	padding:10px;
+	background: #EDF7FF;
+	text-align: left;
+	border: 1px solid #194C80;
+}
+
+.title{
+	float:left;
+	width:auto;
+	height:auto;
+/*	background:#CCC;*/
+}
+
+.logo2{
+	float:right;
+	background:#CCC;
+	width:200px;
+	height: 55px;
+	display:block;
+}
+
+.logo2 img{
+	height:100%;
+}
+
+.section-imp{
+	width:100%;
+	padding: 0;
+	font-size: 8pt;
+	border-left: 1px solid #194c80;
+	border-bottom: 1px solid #194c80;
+}
+
+.section-imp table{
+	width:100%;
+	text-align:left;
+
+	border-top: 1px solid #194c80;
+	border-bottom: 1px solid #194c80;
+	margin: 0;
+}
+
+.section-imp tr{
+	padding:0;
+	height:auto;
+}
+
+.section-imp td{
+	height:15px !important;
+	border-bottom: 1px solid #194c80;
+	border-right: 1px solid #194C80;
+	background: #FFF;
+	padding:5px;
+}
+
+.section-imp .nombre{
+    width:424px;
+}
+
+.section-imp .color{
+    background: #EDF7FF;
+}
+
+.section-imp .box{
+	width:100%;
+	height:auto;
+	overflow:auto;
+	font-size:6pt;
+	background: #EDF7FF;
+}
+
+.section-imp .box1, .section-imp .box2{
+	float:left;
+	width: 358.5px;
+	height:64px;
+	padding:3px;
+	border-right: 1px solid #194C80;
+}
+
+.section-imp  hr{
+	width: 300px;
+	height: 1px;
+	display:block;
+	border:0;
+	border-bottom: 1px solid #194c80;
+	margin: 22px auto 0;
+}
+
+.section-imp .box2 span{
+	text-align:center;
+	display: block;
+	font-size:6pt;
+}
